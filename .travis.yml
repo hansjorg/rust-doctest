@@ -1,11 +1,12 @@
+env:
+    - global:
+        - secure: "JHIOY0o74O3iOqdTJmLWEkYsyV6aMGAgM8LCR9rtcHoIc/lgiaxS888h1SVfOR88owg9WJ3HuQNymu5YKf/QsOlcx62rP+0HfHnYCffIuJV5KFtkZcLC9ePW5lWkShLsGSNxqYrVdg8GwiLzAA/ZIjosbk81/aYFUsGmnFN/KcM="
+        - USIKKER=hepp
 before_install:
       - yes | sudo add-apt-repository ppa:hansjorg/rust
       - sudo apt-get update
 install:
       - sudo apt-get install rust-nightly
-env:
-      - secure: "JHIOY0o74O3iOqdTJmLWEkYsyV6aMGAgM8LCR9rtcHoIc/lgiaxS888h1SVfOR88owg9WJ3HuQNymu5YKf/QsOlcx62rP+0HfHnYCffIuJV5KFtkZcLC9ePW5lWkShLsGSNxqYrVdg8GwiLzAA/ZIjosbk81/aYFUsGmnFN/KcM="
-      - USIKKER=hepp
 script:
       - rustpkg build stuff
       - echo $HEIHEI
