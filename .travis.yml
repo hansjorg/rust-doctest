@@ -1,6 +1,6 @@
 env:
   global:
-  - secure: k6wqY4ABDhGy6oKJ1xuoawuaujAYNtcCSBwSLOQ17749+o6yTf3WkPaLcs4nUAEC2CFQQ+ZnZpljm3+82Io4zjzh3d+rQrfxIqQZMdiAbEirzn9G9+TLpbOD0To79CvPjFdH7NdTeD3COmXkyviUuKOWbRHlUL6IKLNHtO0gHEI=
+  - secure: O3R1HcEwKZdVa54Lc21Y3s47uf5S2GJm4SFg4iyshZk3mIBqWMeKN/JrrsUJ/i86S7vEYeDtbCaTVW24GS+YwPf/NpvVmyAU90P3DW7PmITbswu1LmJPGMCox4KsfutNStTltJoI8hcj4+NjnhcJSsVgrX7601yy/dYH2+zIi/Q=
   - USIKKER=hepp
   - secure: raS5BUIOz48UFjhmdjlNttD7va7gl2wV0tW1DHR861QBVI99RPboYyT8phw0t1+ks6OAGa0Z/zCk1cmP5pVJBjuNkpQG2bBZdSzZKJewcMg3oqT5s4z2cQWfw88C8kBVACNu4DVi8CbMiIsIcO2loSKkiqQW2ICnz2zOlI1N4Ww=
 before_install:
