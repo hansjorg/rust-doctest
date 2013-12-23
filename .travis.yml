@@ -15,5 +15,5 @@ script:
 - rustpkg build stuff
 after_script:
 - rustdoc src/stuff/lib.rs
-- ls -lR doc
+- ls -lR .
 - travis-artifacts upload --path doc --target-path artifacts/$TRAVIS_BUILD_ID/$TRAVIS_JOB_ID
