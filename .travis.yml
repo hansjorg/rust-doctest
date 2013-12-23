@@ -2,8 +2,8 @@ env:
   global:
   - ARTIFACTS_AWS_REGION=eu-west-1
   - ARTIFACTS_S3_BUCKET=rust-ci-artifacts
-  - secure: ToYJCWO7Nflkwla2y96vQx9JamI1CHHr+1PLXJu9WKIw9p2Dz1ldEhhfKKnBNk3Cs9k2+dp0dy5HfLRPfyiruLpM/SbTU4GSN1oQoo5O1WDNYsmMHxoFgv/IAE12PbYaqR9F/iTLJYrEvqkaINFIXycnjiqDvrG69+fuiKmK58g=
-  - secure: EuH5gXyKCyKm15alN/rBmVfkYELl4b3axN81Trb38hjyrEXZjh+hTnkg8kZdojqo6gIgZw3NJwK6mnGUnqwMC462pSjY27Xx4/o929osZ4D+FyyTGPT/DOSxQZCXFg4U0n8YzLDIqwkb4rq36fND+Esx51eZBwP+hKbzBMTiqMY=
+  - secure: IychfLoM4E7qrFYpDpxc1/dEVlohzLIwqMtyFo52d6rO0aJZTyt5Sq8362lwPpfAaKCGHsTQOc7VjqfEWwh4McXJCe21yGPqdWc39SaDoqPUT5KZ9lQGSzCGN3Y054Md26SoVQkwazD5K8w+EZo8SYKfxGSqI1xaj+nZC/Ddh0o=
+  - secure: UwxwaSSJ9KDzLYOweH9aePgv/KOLLFoh4YALdxtaM13VL5v9uXK9gix1DudpuLMMVyw2or00OK8LZOjEhMRmINxmbEDM1s/zfwS/Drx/ygWiy+YIyNBY6GQC0PrmUFjFLuYjanVZOHc2ErowdpHmeYHM7kJcbZqtQDDZqI8xD8o=
 before_install:
 - yes | sudo add-apt-repository ppa:hansjorg/rust
 - sudo apt-get update
