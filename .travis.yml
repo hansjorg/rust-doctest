@@ -4,17 +4,8 @@ env:
   - ARTIFACTS_S3_BUCKET=rust-ci-artifacts
   - secure: IychfLoM4E7qrFYpDpxc1/dEVlohzLIwqMtyFo52d6rO0aJZTyt5Sq8362lwPpfAaKCGHsTQOc7VjqfEWwh4McXJCe21yGPqdWc39SaDoqPUT5KZ9lQGSzCGN3Y054Md26SoVQkwazD5K8w+EZo8SYKfxGSqI1xaj+nZC/Ddh0o=
   - secure: UwxwaSSJ9KDzLYOweH9aePgv/KOLLFoh4YALdxtaM13VL5v9uXK9gix1DudpuLMMVyw2or00OK8LZOjEhMRmINxmbEDM1s/zfwS/Drx/ygWiy+YIyNBY6GQC0PrmUFjFLuYjanVZOHc2ErowdpHmeYHM7kJcbZqtQDDZqI8xD8o=
-  - secure: A+9mK5LjCXthv8Q8Vtg/YJHjWC2jwM3w6iGFBOg1WbnhcBlvGnn2Jyvu8RYtZsicuACaxr5b+x4GxLDyNHioROiez3zQrnAUc91tWyZhVEAzrsp9375HEzgslZN3mlGsiWi1ARoJqXn86xCoVkBWEBVRcOl/PNWIj/Cevr8sXUs=
-before_install:
-- yes | sudo add-apt-repository ppa:hansjorg/rust
-- sudo apt-get update
-install:
-- sudo apt-get install rust-nightly
-before_script:
-- gem install travis-artifacts
+  - secure: MdG1dwSfJZHmrdL7Vv9/sg636OXtsZm4fREtS6e25jsAJQBtofcZlpkM3cIqX5mLmJ0b4QutECdFeWEc6llElAxXlSAxdW7nDOwOxgSXMu9IpKvhtOCNnLaiPRqUDajCe13gWLlPXbz8k7SJKEc6Zr8q+PTB7b6xLDk5GuiB6v4=
 script:
-- rustpkg build stuff
+- echo "test"
 after_script:
-- rustdoc src/stuff/lib.rs
-- travis-artifacts upload --path doc --target-path artifacts/$TRAVIS_BUILD_ID/$TRAVIS_JOB_ID
-- echo $TESTVAR1
+- echo $HIDDEN
