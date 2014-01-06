@@ -4,7 +4,7 @@ env:
   - ARTIFACTS_S3_BUCKET=rust-ci-artifacts
   - secure: IychfLoM4E7qrFYpDpxc1/dEVlohzLIwqMtyFo52d6rO0aJZTyt5Sq8362lwPpfAaKCGHsTQOc7VjqfEWwh4McXJCe21yGPqdWc39SaDoqPUT5KZ9lQGSzCGN3Y054Md26SoVQkwazD5K8w+EZo8SYKfxGSqI1xaj+nZC/Ddh0o=
   - secure: UwxwaSSJ9KDzLYOweH9aePgv/KOLLFoh4YALdxtaM13VL5v9uXK9gix1DudpuLMMVyw2or00OK8LZOjEhMRmINxmbEDM1s/zfwS/Drx/ygWiy+YIyNBY6GQC0PrmUFjFLuYjanVZOHc2ErowdpHmeYHM7kJcbZqtQDDZqI8xD8o=
-  - secure: MdG1dwSfJZHmrdL7Vv9/sg636OXtsZm4fREtS6e25jsAJQBtofcZlpkM3cIqX5mLmJ0b4QutECdFeWEc6llElAxXlSAxdW7nDOwOxgSXMu9IpKvhtOCNnLaiPRqUDajCe13gWLlPXbz8k7SJKEc6Zr8q+PTB7b6xLDk5GuiB6v4=
+  - secure: D7TeokRq3qQ5ZDU4W3BuoypeMN9uq9ug3WNyYfDiapBjRwIOavB1v8ZcW+P8mOKfHqEjpaWJJTU7fV62t9561beWzfO0Dl6MCgXkxR2o5wyHu6vbCD5L7lHYFTdI6WTZmysk/d4LWYIi3Y4RDr1g+ZthZ1Gu0VD72wZ33Yb2Cbo=
 script:
 - echo "test"
 after_script:
