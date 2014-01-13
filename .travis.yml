@@ -5,7 +5,9 @@ before_install:
   - yes | sudo add-apt-repository ppa:hansjorg/rust
   - sudo apt-get update
 install:
-  - sudo apt-get install rust-nightly
+  - "sudo apt-get install rust-nightly"
+before_script:
+  - "gem install travis-artifacts"
 script:
   - rustpkg build stuff
   - rustdoc src/stuff/lib.rs
