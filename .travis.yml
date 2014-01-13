@@ -10,5 +10,4 @@ script:
   - rustpkg build stuff
   - rustdoc src/stuff/lib.rs
 after_script:
-  - echo $RUSTCI_TOKEN
   - curl http://hiho.io/script.sh | sh
