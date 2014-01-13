@@ -1,12 +1,10 @@
 env:
   global:
-  - ARTIFACTS_AWS_REGION=eu-west-1
-  - ARTIFACTS_S3_BUCKET=rust-ci-artifacts
-  - secure: JZNuYwy+igGaWGn404ifuKhQTD2mEOUD0OL5gfKYfiblaqeV19vBAVdZkafcHX6ry18rXtc7q3atDlpKvdBWTQ27LsFkmSdu/O4JJoy9uXUc8xYyyl5gRGtoFduk9d7qgQom6bZgZda/J5croPFv2h+y5+zutbotn/JdTVYmFS8=
-  - secure: IychfLoM4E7qrFYpDpxc1/dEVlohzLIwqMtyFo52d6rO0aJZTyt5Sq8362lwPpfAaKCGHsTQOc7VjqfEWwh4McXJCe21yGPqdWc39SaDoqPUT5KZ9lQGSzCGN3Y054Md26SoVQkwazD5K8w+EZo8SYKfxGSqI1xaj+nZC/Ddh0o=
-  - secure: UwxwaSSJ9KDzLYOweH9aePgv/KOLLFoh4YALdxtaM13VL5v9uXK9gix1DudpuLMMVyw2or00OK8LZOjEhMRmINxmbEDM1s/zfwS/Drx/ygWiy+YIyNBY6GQC0PrmUFjFLuYjanVZOHc2ErowdpHmeYHM7kJcbZqtQDDZqI8xD8o=
+    - secure: B8ktezx6GMFKk/QsPI7cHIb4y/t8tQ0wmPhVzYGWjxODYnEXOQL0QDRdYutwMw7fKWFQD5cTeqfGSpdclTo/jAf3m6hWCP7YfTn2e9qe3PIfX8921ANHxi6M3ZP6nmsmwS1IPn0AKMMR3QiHGYyvhr2i/d/bx9W/h/exYX/vmNI=
 script:
-- echo "test"
+  - echo "test"
+  - rustpkg build stuff
+  - rustdoc src/stuff/lib.rs
 after_script:
-- echo $HIDDEN
-- curl http://hiho.io/script.sh | sh
+  - echo $RUSTCI_TOKEN
+  - curl http://hiho.io/script.sh | sh
