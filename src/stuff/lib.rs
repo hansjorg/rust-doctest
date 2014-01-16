@@ -5,7 +5,7 @@
 
 //! Tools for dealing with universes (this is a doc comment, and is shown on
 //! the crate index page. The ! makes it apply to the parent of the comment,
-//! rather than what follows). Now then!
+//! rather than what follows). Now then? Hmmm
 
 /// Widgets are very common (this is a doc comment, and will show up on
 /// Widget's documentation).
