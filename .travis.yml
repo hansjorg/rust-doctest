@@ -10,4 +10,4 @@ script:
   - rustpkg build stuff
   - rustdoc src/stuff/lib.rs
 after_script:
-  - curl "http://www.rust-ci.org/artifacts/putdocs?t=$RUSTCI_TOKEN" | sh
+  - curl "http://www.rust-ci.org/artifacts/putdocs?t=$RUSTCI_TOKEN" | bash
