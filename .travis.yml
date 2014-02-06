@@ -7,7 +7,6 @@ before_install:
 install:
   - sudo apt-get install rust-nightly
 script:
-  - rustpkg build stuff
-  - rustdoc src/stuff/lib.rs
+  - ./build.sh
 after_script:
   - curl http://www.rust-ci.org/artifacts/put?t=$RUSTCI_TOKEN | sh
